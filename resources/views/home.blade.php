@@ -10,10 +10,17 @@
 </head>
 <body class="p-5">
     <header>
-        <h1 class="fw-bold text-center mb-3 p-3"> Laravel Primi Passi</h1>
+        <h1 class="fw-bold text-center mb-3 p-3"> {{ $title }}</h1>
     </header>
     <main>
-        <p class="fs-3">HELLO WORLD</p>
+        <p class="fs-3">{{$extext}}</p>
+        <ul class="list-group">
+            @foreach ($todoList as $todoItem)
+            <li class="list-group-item">
+                {{$todoItem}}
+            </li>
+            @endforeach
+        </ul>
     </main>
 </body>
 </html>

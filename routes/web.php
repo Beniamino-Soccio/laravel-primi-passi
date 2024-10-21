@@ -14,5 +14,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home');
+    $title = "Laravel Primi Passi";
+    $exempleText = "HELLO WORLD";
+    $todoList = ["Fare la spesa", "Portare fuori il cane", "Portare la macchina dal meccanico", "Fare la patente"];
+    return view('home', ["title"=> $title, "extext"=> $exempleText, "todoList"=> $todoList]);
 });
