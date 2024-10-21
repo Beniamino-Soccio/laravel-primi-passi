@@ -13,7 +13,7 @@
         <h1 class="fw-bold text-center mb-3 p-3"> {{ $title }}</h1>
     </header>
     <main>
-        <p class="fs-3">{{$extext}}</p>
+        <p class="fs-3">{{$exempleText}}</p>
         <ul class="list-group">
             @foreach ($todoList as $todoItem)
             <li class="list-group-item">
